@@ -99,7 +99,7 @@ Explicit expressions can be used to concatenate text with an expression result:
 <p>Age@(joe.Age)</p>
 ```
 
-Without the explicit expression, `<p>Age@joe.Age</p>` is treated as an email address, and `<p>Age@joe.Age</p>` is rendered. When written as an explicit expression, `<p>Age33</p>` is rendered.
+Without the explicit expression, `<p>Age@joe.Age</p>` is treated as an email address, and `<p>Age@(joe.Age)</p>` is rendered. When written as an explicit expression, `<p>Age33</p>` is rendered.
 
 Explicit expressions can be used to render output from generic methods in *.cshtml* files. The following markup shows how to correct the error shown earlier caused by the brackets of a C# generic. The code is written as an explicit expression:
 
